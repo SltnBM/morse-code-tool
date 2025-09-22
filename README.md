@@ -30,3 +30,6 @@ python main.py
 
 ## Contributing
 Feel free to open issues or submit pull requests for improvements or bug fixes.
+
+## Connect With Me
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Sultan%20Badra-blue?logo=linkedin\&logoColor=white\&style=flat-square)](https://www.linkedin.com/in/sultan-badra)
