@@ -35,9 +35,10 @@ python main.py
 ========== Morse Code Translator ==========
 1. Text  → Morse
 2. Morse → Text
-3. Exit
+3. Show Table (Morse Code Reference)
+4. Exit
 ==========================================
-Choose an option (1/2/3): 1
+Choose an option (1/2/3/4): 1
 
 
 Enter text: HELLO WORLD
@@ -49,9 +50,10 @@ Morse Code: .... . .-.. .-.. --- / .-- --- .-. .-.. -..
 ========== Morse Code Translator ==========
 1. Text  → Morse
 2. Morse → Text
-3. Exit
+3. Show Table (Morse Code Reference)
+4. Exit
 ==========================================
-Choose an option (1/2/3): 2
+Choose an option (1/2/3/4): 2
 
 
 Format: separate letters with space, words with '/'
