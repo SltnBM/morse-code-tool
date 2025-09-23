@@ -8,16 +8,19 @@ MORSE_CODE_DICT = {
     'Y': '-.--', 'Z': '--..',
     '0': '-----', '1': '.----', '2': '..---', '3': '...--',
     '4': '....-', '5': '.....', '6': '-....', '7': '--...',
-    '8': '---..', '9': '----.'
+    '8': '---..', '9': '----.',
+    ',': '--..--', '.': '.-.-.-', '?': '..--..', "'": '.----.',
+    '!': '-.-.--', '/': '-..-.', '(': '-.--.', ')': '-.--.-',
+    '&': '.-...', ':': '---...', ';': '-.-.-.', '=': '-...-',
+    '+': '.-.-.', '-': '-....-', '_': '..--.-', '"': '.-..-.',
+    '$': '...-..-', '@': '.--.-.', ' ': '/'
 }
 
 def text_to_morse(text):
-    words = text.upper().split(" ")
-    morse_words = []
-    for word in words:
-        morse_chars = [MORSE_CODE_DICT.get(ch, '?') for ch in word]
-        morse_words.append(" ".join(morse_chars))
-    return " / ".join(morse_words)
+    morse_chars = []
+    for ch in text.upper():
+        morse_chars.append(MORSE_CODE_DICT.get(ch, '?'))
+    return " ".join(morse_chars)
 
 def morse_to_text(morse):
     morse_dict_reversed = {v: k for k, v in MORSE_CODE_DICT.items()}
@@ -42,7 +45,7 @@ if __name__ == "__main__":
                 text = input("\nEnter text: ")
                 print("Morse Code:", text_to_morse(text))
             elif choice == '2':
-                print("\nFormat: separate letters with space, words with '/'")
+                print("\nFormat: separate letters with spaces, words with '/'")
                 print("   Example: .... . .-.. .-.. --- / .-- --- .-. .-.. -..")
                 morse = input("Enter Morse code: ")
                 print("Text:", morse_to_text(morse))
