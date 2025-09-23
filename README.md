@@ -6,6 +6,7 @@ This script supports encoding text into Morse code and decoding Morse code back 
 - 🔤 Translate text (letters, numbers, punctuation, and symbols) to Morse code.
 - 📡 Decode Morse code back to text.
 - ⌨️ Interactive menu for user input.
+- 📖 Show full Morse Code reference table in CLI.
 - ❌ Handles invalid input gracefully.
 - 👋 Graceful exit with goodbye message when pressing `Ctrl + C`.
 
