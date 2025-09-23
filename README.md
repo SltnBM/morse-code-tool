@@ -3,7 +3,7 @@ A simple Python script to convert between **Text and Morse Code**.
 This script supports encoding text into Morse code and decoding Morse code back into text, with `/` used as a word separator.
 
 ## ✨ Features
-- 🔤 Translate text to Morse code.
+- 🔤 Translate text (letters, numbers, punctuation, and symbols) to Morse code.
 - 📡 Decode Morse code back to text.
 - ⌨️ Interactive menu for user input.
 - ❌ Handles invalid input gracefully.
