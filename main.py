@@ -31,15 +31,22 @@ def morse_to_text(morse):
         decoded_words.append("".join(chars))
     return " ".join(decoded_words)
 
+def show_help():
+    print("\n===== Morse Code Reference =====")
+    for k, v in MORSE_CODE_DICT.items():
+        print(f"{k}: {v}")
+    print("================================")
+
 if __name__ == "__main__":
     try:
         while True:
             print("\n========== Morse Code Translator ==========")
             print("1. Text  → Morse")
             print("2. Morse → Text")
-            print("3. Exit")
+            print("3. Show Table (Morse Code Reference)")
+            print("4. Exit")
             print("==========================================")
-            choice = input("Choose an option (1/2/3): ").strip()
+            choice = input("Choose an option (1/2/3/4): ").strip()
 
             if choice == '1':
                 text = input("\nEnter text: ")
@@ -50,9 +57,11 @@ if __name__ == "__main__":
                 morse = input("Enter Morse code: ")
                 print("Text:", morse_to_text(morse))
             elif choice == '3':
+                show_help()
+            elif choice == '4':
                 print("\nExiting, Goodbye!")
                 break
             else:
-                print("\nInvalid choice! Please select 1, 2, or 3.")
+                print("\nInvalid choice! Please select 1, 2, 3, or 4.")
     except KeyboardInterrupt:
         print("\n\nExiting, Goodbye!")
