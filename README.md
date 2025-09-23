@@ -28,6 +28,39 @@ cd morse-code-tool
 python main.py
 ```
 
+## 📝 Example Usage
+### 1. Text → Morse
+```plaintext
+========== Morse Code Translator ==========
+1. Text  → Morse
+2. Morse → Text
+3. Exit
+==========================================
+Choose an option (1/2/3): 1
+
+
+Enter text: HELLO WORLD
+Morse Code: .... . .-.. .-.. --- / .-- --- .-. .-.. -..
+```
+
+### 2. Morse → Text
+```plaintext
+========== Morse Code Translator ==========
+1. Text  → Morse
+2. Morse → Text
+3. Exit
+==========================================
+Choose an option (1/2/3): 2
+
+
+Format: separate letters with space, words with '/'
+Example: .... . .-.. .-.. --- / .-- --- .-. .-.. -..
+
+
+Enter Morse code: .... . .-.. .-.. --- / .-- --- .-. .-.. -..
+Text: HELLO WORLD
+```
+
 ## 🤝 Contributing
 Feel free to open issues or submit pull requests for improvements or bug fixes.
 
